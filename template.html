@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+</head>
+<body>
+    <h2>Question {{ index + 1 }}</h2>
+    <form method="POST">
+        <p>{{ q.question }}</p>
+
+        <input type="radio" name="option" value="1" required> {{ q.option1 }} <br>
+        <input type="radio" name="option" value="2"> {{ q.option2 }} <br>
+        <input type="radio" name="option" value="3"> {{ q.option3 }} <br>
+        <input type="radio" name="option" value="4"> {{ q.option4 }} <br><br>
+
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
