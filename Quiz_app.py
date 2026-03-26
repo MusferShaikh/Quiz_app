@@ -1,4 +1,3 @@
-import tkinter
 import pyodbc
 # Connect to SQL Server
 conn = pyodbc.connect(
@@ -31,4 +30,4 @@ for q in questions:
     else:
         print("Wrong!")
 
-print("\n🎯 Final Score:", score, "/", len(questions))
+print("\n🎯 Final Score of Quiz:", score, "/", len(questions))
